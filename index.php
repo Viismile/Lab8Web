@@ -34,12 +34,12 @@ $result = mysqli_query($conn, $sql);
                 <td><img src="gambar/<?= $row['gambar'];?>" alt="<?=$row['nama'];?>"></td>
                 <td><?= $row['nama'];?></td>
                 <td><?= $row['kategori'];?></td>
-                <td><?= $row['harga_beli'];?></td>
                 <td><?= $row['harga_jual'];?></td>
+                <td><?= $row['harga_beli'];?></td>
                 <td><?= $row['stok'];?></td>
                 <td>
-                    <a href="ubah.php">Ubah</a>
-                    <a href="#">Hapus</a> 
+                    <a href="ubah.php?id=<?= $row['id_barang'];?>">Ubah</a>
+                    <a href="hapus.php?id=<?= $row['id_barang'];?>">Hapus</a> 
                 </td>
             </tr>
             <?php endwhile; else: ?>

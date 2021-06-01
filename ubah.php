@@ -4,6 +4,7 @@ include_once 'koneksi.php';
 
 if (isset($_POST['submit']))
 {
+    $id = $_POST['id'];
     $nama = $_POST['nama'];
     $kategori = $_POST['kategori'];
     $harga_jual = $_POST['harga_jual'];
